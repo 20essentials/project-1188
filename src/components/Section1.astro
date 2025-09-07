@@ -1,0 +1,61 @@
+<script>
+  import { gsap } from '@/utils/gsap';
+  const startClassName = '.start';
+  const endClassName = '.end';
+  gsap.to(startClassName, {
+    morphSVG: endClassName,
+    duration: 1,
+    ease: 'power2.inOut',
+    repeat: -1,
+    repeatDelay: 2,
+    yoyo: true
+  });
+</script>
+
+<section class='am-section am-section1'>
+  <svg
+    width='1080'
+    height='1080'
+    viewBox='0 0 285.74997 285.74997'
+    version='1.1'
+    id='svg1'
+    xml:space='preserve'
+    xmlns='http://www.w3.org/2000/svg'
+    ><defs id='defs1'></defs><g
+      id='layer1'
+      style='display:inline;opacity:1;mix-blend-mode:multiply'
+      ><path
+        id='rect1'
+        class='start'
+        style='opacity:0.98;fill:#66ff00;stroke:#66ff00;stroke-width:0.00010305;stroke-linejoin:round;stroke-opacity:0.772549'
+        d='M 0,0 H 285.74997 V 285.74997 H 0 Z'></path><path
+        class='end'
+        id='path1'
+        style='opacity:0.89;fill:#00aad4;stroke:#1c241c;stroke-width:2.05819;stroke-linejoin:round;stroke-opacity:0.772549'
+        d='M 234.46727,271.32506 146.69611,226.86572 62.020631,276.97033 77.181194,179.75631 3.3627183,114.70831 100.50362,99.086079 139.55678,8.7796006 l 44.87581,87.5589534 97.95466,9.235526 -69.40613,69.73664 z'
+      ></path></g
+    ></svg
+  >
+</section>
+
+<style>
+  .am-section1 {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    place-content: center;
+    place-items: center;
+
+    svg {
+      position: absolute;
+      width: 30%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
+  .end {
+    visibility: hidden;
+  }
+</style>
