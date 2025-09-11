@@ -9,7 +9,6 @@ export default defineConfig({
   //Deploy normal project
   base: '/project-1188/',
   site: 'https://20essentials.github.io/project-1188/'
-
   //Deploy 20 Projects
   // base: '/20-projects-with-css/',
   // site: 'https://20essentials.github.io/20-projects-with-css/'
